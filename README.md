@@ -2,6 +2,8 @@
 封装定位工具类，block传值
 
 调用：
+
+```
 [[MSLocationTool sharedMSLocationTool] getCurrentLOcation:^(CLLocation *location, CLPlacemark *pl, NSString *error) {
 if ([error length] > 0) {
 NSLog(@"定位有错误-->%@",error);
@@ -13,4 +15,5 @@ NSLog(@"定位有错误-->%@",error);
 
 
 }];
+```
 
