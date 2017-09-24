@@ -12,8 +12,6 @@
 
 #define isIOS(version) ([[UIDevice currentDevice].systemVersion floatValue] >= version)
 
-//SISingletonM(MSLocationTool)
-
 @interface MSLocationTool()<CLLocationManagerDelegate>
 
 @property(nonatomic,copy)ResultCityBlock block;
@@ -21,10 +19,8 @@
 /** manager */
 @property(nonatomic,strong)CLLocationManager *locationManager;
 
-
 /** 地理编码 */
 @property(nonatomic,strong)CLGeocoder *geoC;
-
 
 
 @end

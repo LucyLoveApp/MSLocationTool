@@ -80,6 +80,10 @@
                 
             }else{
                 [self.locationBtn setTitle:pl.locality forState:UIControlStateNormal];
+                
+                [[NSUserDefaults standardUserDefaults] setValue:pl.locality forKey:CITY_KEY];
+                [[NSUserDefaults standardUserDefaults] synchronize];
+                
             }
             
             
